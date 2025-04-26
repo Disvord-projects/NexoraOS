@@ -487,14 +487,12 @@ cache_line db '  Cache line: ', 0
 ; ===================== About OS =====================
 
 info db 10, 13
-     db '+----------------------------------------------+', 10, 13
-     db '|  x16 PRos is the simple 16 bit operating     |', 10, 13
-     db '|  system written in NASM for x86 PC`s         |', 10, 13
-     db '|----------------------------------------------|', 10, 13
-     db '|  Autor: PRoX (https://github.com/PRoX2011)   |', 10, 13
-     db '|  Amount of disk sectors: 25                  |', 10, 13
-     db '|  OS version: 0.2.6                           |', 10, 13
-     db '+==============================================+', 10, 13, 0
+     db '   A simple operating system based on', 10, 13
+     db ' ', 10, 13
+     db '  Author: Disvord Projects (https://github.com/PRoX2011)', 10, 13
+     db '  Author x16-PRos: PRoX2011 (https://github.com/PRoX2011)', 10, 13
+     db '  Amount of disk sectors: 25', 10, 13
+     db '  OS version: 0.1', 10, 13
 
 ; ===================== Date and time functions =====================
 
@@ -772,7 +770,7 @@ print_string_red:
     
 ; ===================== Data section =====================
 
-header db '============================= x16 PRos v0.2 ====================================', 0
+header db 'Welcome to NexoraOS!', 0
 menu db '+-----------------------------------------------+', 10, 13
      db '|Commands:                                      |', 10, 13
      db '|  help - get list of the commands              |', 10, 13
@@ -785,13 +783,11 @@ menu db '+-----------------------------------------------+', 10, 13
      db '|  CPU - print CPU info                         |', 10, 13
      db '|  load - load program from disk sector         |', 10, 13
      db '|  writer - text editor                         |', 10, 13
-     db '|  brainf - brainf IDE                          |', 10, 13
-     db '|  barchart - charting soft (by Loxsete)        |', 10, 13
      db '|  snake - snake game                           |', 10, 13
      db '|  calc - calculator program (by Saeta)         |', 10, 13
      db '+===============================================+', 0
 unknown_msg db 'Unknown command.', 0
-prompt db '[PRos] > ', 0
+prompt db '[User] >> ', 0
 mt db '', 10, 13, 0
 buffer db 512 dup(0)
 command_buffer db 128 dup(0)
