@@ -489,7 +489,7 @@ cache_line db '  Cache line: ', 0
 info db 10, 13
      db '   A simple operating system based on', 10, 13
      db ' ', 10, 13
-     db '  Author: Disvord Projects (https://github.com/PRoX2011)', 10, 13
+     db '  Author: Disvord Projects (https://github.com/Disvord-projects)', 10, 13
      db '  Author x16-PRos: PRoX2011 (https://github.com/PRoX2011)', 10, 13
      db '  Amount of disk sectors: 25', 10, 13
      db '  OS version: 0.1', 10, 13
